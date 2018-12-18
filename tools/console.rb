@@ -28,6 +28,8 @@ rev5 = Review.new(r1, c4, "meh, ok", 3 )
 c1.add_review(r4, "good", 4)
 c1.add_review(r4, "good", 4)
 c2.add_review(r4, "goooooooooooooooood", 4)
+c2.add_review(r4, "lalalalalalalalalalalalalalal", 4)
+c2.add_review(r4, "deedeedeedeedee", 4)
 c1.add_review(r4, "good", 4)
 
 binding.pry

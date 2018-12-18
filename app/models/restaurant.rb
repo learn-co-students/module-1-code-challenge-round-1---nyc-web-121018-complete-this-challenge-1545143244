@@ -19,7 +19,7 @@ class Restaurant
     Review.all.select { |review| review.restaurant == self }
   end
 
-  def customers
+  def customers # using reviews helper method
     customers = reviews.map {|review| review.customer }
     customers.uniq
   end
