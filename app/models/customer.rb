@@ -12,7 +12,7 @@ class Customer
     @@all
   end
 
-  def self.find_by_name(name)
+  def self.find_by_name(name) # using full_name helper method
     self.all.find { |customer| customer.full_name == name}
   end
 
@@ -24,7 +24,7 @@ class Customer
     self.all.map { |customer| customer.full_name }
   end
 
-  def full_name
+  def full_name # helper method
     "#{first_name} #{last_name}"
   end
 
